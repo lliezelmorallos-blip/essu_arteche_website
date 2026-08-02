@@ -1,132 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Student Profile | ESSU-AEC</title>
     <link rel="stylesheet" href="profile.css">
-    
 </head>
-
 <body>
-
-    <div class="header">
+<div class="container">
+    <!-- HEADER -->
+    <header>
         <h1>Student Profile</h1>
-        <p>
-            This page contains the profile information of a student enrolled at
-            <strong>Eastern Samar State University - Arteche Extension Campus</strong>.
-        </p>
-    </div>
-
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="academics.html">Academics</a>
-        <a href="contact.html">Contact</a>
-    </div>
-
-    <div class="container">
-
-        <div class="two-column">
-
-            <div class="biography">
+        <p>Eastern Samar State University - Arteche Extension Campus</p>
+    </header>
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- PROFILE CARD -->
+    <section class="profile-card">
+        <div class="profile-image">
+            <img src="./assets/images/liezel.jpg"
+                 alt="Student Picture">
+        </div>
+        <div class="profile-details">
+            <h2>Personal Information</h2>
+            <table>
+                <tr>
+                    <th>Full Name</th>
+                    <td>Morallos Liezel Pajares</td>
+                </tr>
+                <tr>
+                    <th>Student Number</th>
+                    <td>23-04776</td>
+                </tr>
+                <tr>
+                    <th>Program</th>
+                    <td>Bachelor of Science in Information Technology</td>
+                </tr>
+                <tr>
+                    <th>Year Level</th>
+                    <td>Fourth Year</td>
+                </tr>
+                <tr>
+                    <th>Email</th>
+                    <td>llizelmorallos@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Address</th>
+                    <td>Brgy. Dao Oras, Eastern Samar</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <!-- CONTENT START -->
+    <div class="content">
+        <div class="left-column">
+            <!-- BIOGRAPHY CARD -->
+            <section class="card">
                 <h2>Biography</h2>
-                <img src="assets/images/liezel.jpg" alt="Student Picture" class="profile-pic">
-                <p><strong>Full Name:</strong> Liezel P. Morallos </p>
-                <p><strong>Student Number:</strong> 23-04776 </p>
-                <p><strong>Program:</strong> Bachelor of Science in Information Technology</p>
-                <p><strong>Year Level:</strong> Fourth Year</p>
-                <p><strong>Email:</strong> lliezelmorallos@gmail.com@email.com</p>
-                <p><strong>Address:</strong> Dao Oras Eastern Samar, Philippines</p>
-            </div>
-
-            <div class="subjects">
+                <p>
+                    Liezel P. Morallos is a fourth-year Bachelor of Science in
+                    Information Technology student at Eastern Samar State University –
+                    Arteche Extension Campus. She is passionate about Problem solving,
+                    database management, and creating innovative 
+                    technology solutions that can help the community.
+                </p>
+            </section>
+ <!-- SKILLS -->
+            <section class="card">
+                <h2>Skills</h2>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Microsoft Office</li>
+                    <li>Problem Solving</li>
+                </ul>
+            </section>
+            <!-- EDUCATIONAL BACKGROUND -->
+            <section class="card">
+                <h2>Educational Background</h2>
+                <ol>
+                    <li>Elementary</li>
+                    <li>Junior High School</li>
+                    <li>Senior High School</li>
+                    <li>College</li>
+                </ol>
+            </section>
+        </div>    
+        <!-- RIGHT COLUMN -->
+        <div class="right-column">
+            <!-- USEFUL LINKS -->
+            <section class="card">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="about.html"> About</a></li>
+                    <li><a href="academics.html"> Academics</a></li>
+                    <li><a href="contact.html"> Contact</a></li>
+                    <li><a href="https://www.google.com" target="_blank">
+                         Visit Google
+                    </a></li>
+                </ul>
+            </section>
+            <!-- CURRENT SUBJECTS -->
+            <section class="card">
                 <h2>Current Subjects</h2>
-                <table>
+                <table class="subject-table">
                     <tr>
-                        <th>Code</th>
+                        <th>Course Code</th>
                         <th>Description</th>
-                        <th>Instructor</th>
-                        <th>Schedule</th>
                     </tr>
                     <tr>
-                        <td>IT411*</td>
+                        <td>IT413</td>
+                        <td>Web Systems and Technologies</td>
+                    </tr>
+                    <tr>
+                        <td>IT411</td>
                         <td>Capstone Project and Research 2</td>
-                        <td>E. Borata</td>
-                        <td>7:30-8:30 AM TTh</td>
                     </tr>
                     <tr>
-                        <td>IT411*</td>
-                        <td>Capstone Project and Research 2</td>
-                        <td>E. Borata</td>
-                        <td>8:30-10:30 AM TTh</td>
+                        <td>IT414</td>
+                        <td>Data Visualization</td>
                     </tr>
                     <tr>
-                        <td>IT413*</td>
-                        <td>IT Elective 3</td>
-                        <td>A. Morallos</td>
-                        <td>11:00-12:30 PM TTh</td>
-                    </tr>
-                    <tr>
-                        <td>IT413*</td>
-                        <td>IT Elective 3</td>
-                        <td>A. Morallos</td>
-                        <td>10:00-11:00 AM TTh</td>
-                    </tr>
-                    <tr>
-                        <td>IT_414</td>
-                        <td>IT Elective 4 (Data Visualization)</td>
-                        <td>F. Amoyan</td>
-                        <td>7:30-8:30 AM MW</td>
-                    </tr>
-                    <tr>
-                        <td>IT_414</td>
-                        <td>IT Elective 4 (Data Visualization)</td>
-                        <td>F. Amoyan</td>
-                        <td>8:30-10:00 AM MW</td>
-                    </tr>
-                    <tr>
-                        <td>IT412*</td>
+                        <td>IT412</td>
                         <td>Special Topics in Information Technology</td>
-                        <td>E. Borata</td>
-                        <td>3:30-5:00 PM MW</td>
                     </tr>
                 </table>
+            </section>  
+        </div>
+    </div>
+    <!-- CONTACT FORM -->
+    <section class="contact-card">
+        <h2>Contact the Student</h2>
+        <form>
+            <label>Full Name</label>
+            <input
+                type="text"
+                placeholder="Enter your full name">
+            <label>Email Address</label>
+            <input
+                type="email"
+                placeholder="Enter your email">
+            <label>Course</label>
+            <select>
+                <option>BSIT</option>
+                <option>BSED</option>
+                <option>BEED</option>
+                <option>BSHM</option>
+            </select>
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="gender"> Male</label>
+                <label><input type="radio" name="gender"> Female</label>
             </div>
-
-        </div>
-
-        <div class="contact-form">
-            <h2>Contact the Student</h2>
-            <form>
-                <label for="fullname">Full Name:</label>
-                <input type="text" id="fullname" name="fullname">
-
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email">
-
-                <label for="message">Message</label>
-                <textarea id="message" rows="4"></textarea>
-
-                <input type="submit" value="Submit">
-            </form>
-        </div>
-
-       <div class="container">
-    ...
-    <div class="school-location">
+            <label>Interests</label>
+            <div class="checkbox-group">
+                <label><input type="checkbox"> Programming</label>
+                <label><input type="checkbox"> Networking</label>
+                <label><input type="checkbox"> Multimedia</label>
+            </div>
+            <label>Message</label>
+            <textarea
+                rows="5"
+                placeholder="Write your message here"></textarea>
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </section>
+    <!-- SCHOOL LOCATION -->
+    <section class="location">
         <h2>School Location</h2>
-        <iframe src="assets/images/map.png.png"></iframe>
-    </div>
+        <iframe
+            src="https://www.google.com/maps?q=Eastern+Samar+State+University+Arteche&output=embed"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Eastern Samar State University - Arteche Extension Campus</p>
+        <p>Created by Irene Marie Arayan</p>
+    </footer>
+      <script src="script.js"></script>
 </div>
-    </div>
-
-    <div class="footer">
-        <p>&copy; 2026 ESSU - Arteche</p>
-    </div>
-
 </body>
-
 </html>
-
