@@ -8,8 +8,9 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:#f2f2f2;
+    background:linear-gradient(to bottom, #f7f3fc, #ede3f8);
     padding:30px;
+    color:#333;
 }
 
 .container{
@@ -20,7 +21,7 @@ body{
 /* HEADER */
 
 header{
-    background:#1f4e79;
+    background:linear-gradient(135deg, #5b2a86, #8e44ad);
     color:white;
     text-align:center;
     padding:25px;
@@ -29,6 +30,7 @@ header{
 
 header h1{
     font-size:38px;
+    letter-spacing:1px;
 }
 
 header p{
@@ -38,7 +40,7 @@ header p{
 /* NAVIGATION */
 
 nav{
-    background:white;
+    background:#ffffff;
     border:2px solid black;
     border-top:none;
     padding:15px;
@@ -53,8 +55,13 @@ nav ul{
 
 nav a{
     text-decoration:none;
-    color:#1f4e79;
+    color:#5b2a86;
     font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#8e44ad;
 }
 
 /* PROFILE CARD */
@@ -62,7 +69,7 @@ nav a{
 .profile-card{
     display:flex;
     border:2px solid black;
-    background:white;
+    background:#ffffff;
     margin-top:25px;
 }
 
@@ -79,8 +86,8 @@ nav a{
     border-radius:50%;
     display:block;
     object-fit:cover;
-    margin: 20px auto;
-    border: 2px solid black;
+    margin:20px auto;
+    border:2px solid black;
 }
 
 .profile-details{
@@ -91,6 +98,7 @@ nav a{
 .profile-details h2{
     text-align:center;
     margin-bottom:20px;
+    color:#5b2a86;
 }
 
 .profile-details table{
@@ -103,6 +111,10 @@ nav a{
     border:1px solid black;
     padding:10px;
     text-align:left;
+}
+
+.profile-details th{
+    background:#e8d9f4;
 }
 
 /* BIOGRAPHY & SUBJECTS */
@@ -125,7 +137,7 @@ nav a{
 
 .card{
     border:2px solid black;
-    background:white;
+    background:#ffffff;
     padding:20px;
     height:100%;
 }
@@ -133,11 +145,12 @@ nav a{
 .card h2{
     text-align:center;
     margin-bottom:15px;
+    color:#5b2a86;
 }
 
 .card p{
     text-align:justify;
-    line-height:1.7;
+    line-height:1.8;
 }
 
 .subject-table{
@@ -146,7 +159,7 @@ nav a{
 }
 
 .subject-table th{
-    background:#1f4e79;
+    background:#5b2a86;
     color:white;
 }
 
@@ -157,11 +170,15 @@ nav a{
     text-align:center;
 }
 
+.subject-table tr:nth-child(even){
+    background:#f6f1fb;
+}
+
 /* CONTACT */
 
 .contact-card{
     border:2px solid black;
-    background:white;
+    background:#ffffff;
     margin-top:25px;
     padding:25px;
 }
@@ -169,6 +186,7 @@ nav a{
 .contact-card h2{
     text-align:center;
     margin-bottom:20px;
+    color:#5b2a86;
 }
 
 form{
@@ -181,6 +199,7 @@ form label{
     margin-top:15px;
     margin-bottom:5px;
     font-weight:bold;
+    color:#5b2a86;
 }
 
 form input,
@@ -189,6 +208,7 @@ form textarea{
     width:100%;
     padding:10px;
     border:1px solid gray;
+    background:#faf8fd;
 }
 
 .radio-group,
@@ -202,17 +222,22 @@ button{
     width:100%;
     padding:12px;
     margin-top:20px;
-    background:#1f4e79;
+    background:linear-gradient(135deg, #5b2a86, #8e44ad);
     color:white;
     border:none;
     cursor:pointer;
+    font-weight:bold;
+}
+
+button:hover{
+    background:linear-gradient(135deg, #4a1f73, #6f2f9c);
 }
 
 /* SCHOOL LOCATION */
 
 .location{
     border:2px solid black;
-    background:white;
+    background:#ffffff;
     margin-top:25px;
     padding:20px;
 }
@@ -220,6 +245,7 @@ button{
 .location h2{
     text-align:center;
     margin-bottom:15px;
+    color:#5b2a86;
 }
 
 .location iframe{
@@ -232,7 +258,7 @@ button{
 
 footer{
     border:2px solid black;
-    background:#1f4e79;
+    background:linear-gradient(135deg, #5b2a86, #8e44ad);
     color:white;
     text-align:center;
     padding:20px;
